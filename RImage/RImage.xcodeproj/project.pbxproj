@@ -10,6 +10,8 @@
 		0C84C06B23A45C3700D9DC47 /* RImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C84C06123A45C3700D9DC47 /* RImage.framework */; };
 		0C84C07023A45C3700D9DC47 /* RImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84C06F23A45C3700D9DC47 /* RImageTests.swift */; };
 		0C84C07223A45C3700D9DC47 /* RImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C84C06423A45C3700D9DC47 /* RImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CEECA1423A4F72C00D0AAE8 /* RImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1323A4F72C00D0AAE8 /* RImage.swift */; };
+		0CEECA1623A4F7B400D0AAE8 /* RImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		0C84C06A23A45C3700D9DC47 /* RImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C84C06F23A45C3700D9DC47 /* RImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageTests.swift; sourceTree = "<group>"; };
 		0C84C07123A45C3700D9DC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CEECA1323A4F72C00D0AAE8 /* RImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImage.swift; sourceTree = "<group>"; };
+		0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				0C84C06423A45C3700D9DC47 /* RImage.h */,
 				0C84C06523A45C3700D9DC47 /* Info.plist */,
+				0CEECA1323A4F72C00D0AAE8 /* RImage.swift */,
+				0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */,
 			);
 			path = RImage;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					0C84C06023A45C3700D9DC47 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					0C84C06923A45C3700D9DC47 = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEECA1423A4F72C00D0AAE8 /* RImage.swift in Sources */,
+				0CEECA1623A4F7B400D0AAE8 /* RImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		0C84C07623A45C3700D9DC47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.anton.paliakou.RImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +374,7 @@
 		0C84C07723A45C3700D9DC47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +398,7 @@
 		0C84C07923A45C3700D9DC47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +416,7 @@
 		0C84C07A23A45C3700D9DC47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

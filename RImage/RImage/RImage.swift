@@ -13,7 +13,7 @@ struct RImage: View {
     @ObservedObject var viewModel = RImageViewModel()
 
     var body: some View {
-        Spacer()
+        Image(viewModel.image)
     }
 }
 

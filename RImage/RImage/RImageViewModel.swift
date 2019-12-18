@@ -6,8 +6,8 @@
 //  Copyright © 2019 by.anton.paliakou. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 class RImageViewModel: ObservableObject {
-
+    @Published var image: Image?
 }

@@ -10,6 +10,11 @@
 		0C84C06B23A45C3700D9DC47 /* RImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C84C06123A45C3700D9DC47 /* RImage.framework */; };
 		0C84C07023A45C3700D9DC47 /* RImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84C06F23A45C3700D9DC47 /* RImageTests.swift */; };
 		0C84C07223A45C3700D9DC47 /* RImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C84C06423A45C3700D9DC47 /* RImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA40A8923B2D22A00E7FEA4 /* RContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A8823B2D22A00E7FEA4 /* RContainerView.swift */; };
+		0CA40A8C23B2D26000E7FEA4 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A8B23B2D26000E7FEA4 /* ImageService.swift */; };
+		0CA40A8E23B2D28200E7FEA4 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A8D23B2D28200E7FEA4 /* ImageServiceProtocol.swift */; };
+		0CA40A9023B2D29800E7FEA4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A8F23B2D29800E7FEA4 /* NetworkService.swift */; };
+		0CA40A9223B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A9123B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift */; };
 		0CEECA1423A4F72C00D0AAE8 /* RImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1323A4F72C00D0AAE8 /* RImage.swift */; };
 		0CEECA1623A4F7B400D0AAE8 /* RImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +36,11 @@
 		0C84C06A23A45C3700D9DC47 /* RImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C84C06F23A45C3700D9DC47 /* RImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageTests.swift; sourceTree = "<group>"; };
 		0C84C07123A45C3700D9DC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA40A8823B2D22A00E7FEA4 /* RContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RContainerView.swift; sourceTree = "<group>"; };
+		0CA40A8B23B2D26000E7FEA4 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		0CA40A8D23B2D28200E7FEA4 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		0CA40A8F23B2D29800E7FEA4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0CA40A9123B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		0CEECA1323A4F72C00D0AAE8 /* RImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImage.swift; sourceTree = "<group>"; };
 		0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,10 +85,11 @@
 		0C84C06323A45C3700D9DC47 /* RImage */ = {
 			isa = PBXGroup;
 			children = (
+				0CA40A8623B2D1CD00E7FEA4 /* View */,
+				0CA40A8723B2D1F700E7FEA4 /* ViewModel */,
+				0CA40A8A23B2D24400E7FEA4 /* Service */,
 				0C84C06423A45C3700D9DC47 /* RImage.h */,
 				0C84C06523A45C3700D9DC47 /* Info.plist */,
-				0CEECA1323A4F72C00D0AAE8 /* RImage.swift */,
-				0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */,
 			);
 			path = RImage;
 			sourceTree = "<group>";
@@ -90,6 +101,34 @@
 				0C84C07123A45C3700D9DC47 /* Info.plist */,
 			);
 			path = RImageTests;
+			sourceTree = "<group>";
+		};
+		0CA40A8623B2D1CD00E7FEA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CEECA1323A4F72C00D0AAE8 /* RImage.swift */,
+				0CA40A8823B2D22A00E7FEA4 /* RContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CA40A8723B2D1F700E7FEA4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0CA40A8A23B2D24400E7FEA4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0CA40A8B23B2D26000E7FEA4 /* ImageService.swift */,
+				0CA40A8D23B2D28200E7FEA4 /* ImageServiceProtocol.swift */,
+				0CA40A8F23B2D29800E7FEA4 /* NetworkService.swift */,
+				0CA40A9123B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CEECA1423A4F72C00D0AAE8 /* RImage.swift in Sources */,
+				0CA40A8C23B2D26000E7FEA4 /* ImageService.swift in Sources */,
+				0CA40A8E23B2D28200E7FEA4 /* ImageServiceProtocol.swift in Sources */,
+				0CA40A9223B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift in Sources */,
+				0CA40A8923B2D22A00E7FEA4 /* RContainerView.swift in Sources */,
+				0CA40A9023B2D29800E7FEA4 /* NetworkService.swift in Sources */,
 				0CEECA1623A4F7B400D0AAE8 /* RImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

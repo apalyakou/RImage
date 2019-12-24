@@ -20,10 +20,13 @@ struct RContainerView: View {
         ZStack {
             if resultImage != nil {
                 resultImage
+                    .accessibility(identifier: "resultImageId")
             } else if placeholder != nil {
                 placeholder
+                    .accessibility(identifier: "placeholderImageId")
             } else {
                 EmptyView()
+                    .accessibility(identifier: "emptyViewId")
             }
         }
     }

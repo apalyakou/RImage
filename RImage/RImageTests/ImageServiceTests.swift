@@ -7,27 +7,21 @@
 //
 
 import XCTest
+import SwiftUI
+import UIKit
+
+@testable import RImage
 
 class ImageServiceTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testLoadRemoteImage() {
+        let url = URL(string: "https://github.com/apalyakou/RImage/blob/master/RImage/RImageTests/Media.xcassets/remote_image.imageset/RemoteImageStub.png")!
+        let resultImage = Image(uiImage: UIImage(named: "remote_image")!)
+        
+        let imageService = ImageService(networkService: NetworkService())
+       
+        imageService.load(url: url, completion: { image in
+            XCTAssertEqual(image, resultImage)
+        })
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

@@ -13,7 +13,7 @@ import UIKit
 class NetworkServiceStub: NetworkServiceProtocol {
     
     func load(url: URL, completion: @escaping (Data?) -> Void) {
-        let remoteImage = UIImage(systemName: "remote_image")
+        let remoteImage = UIImage(named: "remote_image")
         let remoteImageData = remoteImage?.jpegData(compressionQuality: 1)
         completion(remoteImageData)
     }

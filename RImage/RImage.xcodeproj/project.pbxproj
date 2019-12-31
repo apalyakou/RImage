@@ -17,6 +17,7 @@
 		0CA40A9223B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA40A9123B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift */; };
 		0CEECA1423A4F72C00D0AAE8 /* RImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1323A4F72C00D0AAE8 /* RImage.swift */; };
 		0CEECA1623A4F7B400D0AAE8 /* RImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */; };
+		A0E130B823BB685000B0FC60 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E130B723BB685000B0FC60 /* ImageServiceTests.swift */; };
 		A0E2427923B658D4006CF071 /* NetworkServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2427823B658D4006CF071 /* NetworkServiceStub.swift */; };
 		A0E2427D23B6595A006CF071 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E2427C23B6595A006CF071 /* Media.xcassets */; };
 		A0E2428323B65EDC006CF071 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2428223B65EDC006CF071 /* NetworkServiceTests.swift */; };
@@ -47,6 +48,7 @@
 		0CA40A9123B2D2BA00E7FEA4 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		0CEECA1323A4F72C00D0AAE8 /* RImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImage.swift; sourceTree = "<group>"; };
 		0CEECA1523A4F7B400D0AAE8 /* RImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageViewModel.swift; sourceTree = "<group>"; };
+		A0E130B723BB685000B0FC60 /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
 		A0E2427823B658D4006CF071 /* NetworkServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceStub.swift; sourceTree = "<group>"; };
 		A0E2427C23B6595A006CF071 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A0E2428223B65EDC006CF071 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
@@ -106,10 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				A0E2427723B657DA006CF071 /* Stub */,
-				A0E2428223B65EDC006CF071 /* NetworkServiceTests.swift */,
 				0C84C06F23A45C3700D9DC47 /* RImageTests.swift */,
 				0C84C07123A45C3700D9DC47 /* Info.plist */,
 				A0E2427C23B6595A006CF071 /* Media.xcassets */,
+				A0E130B723BB685000B0FC60 /* ImageServiceTests.swift */,
+				A0E2428223B65EDC006CF071 /* NetworkServiceTests.swift */,
 			);
 			path = RImageTests;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				A0E2427923B658D4006CF071 /* NetworkServiceStub.swift in Sources */,
 				A0E2428323B65EDC006CF071 /* NetworkServiceTests.swift in Sources */,
 				0C84C07023A45C3700D9DC47 /* RImageTests.swift in Sources */,
+				A0E130B823BB685000B0FC60 /* ImageServiceTests.swift in Sources */,
 				A0E2428623B65F6A006CF071 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

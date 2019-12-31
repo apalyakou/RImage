@@ -2,7 +2,7 @@
 //  NetworkServiceTests.swift
 //  RImageTests
 //
-//  Created by ws-067-41b on 12/27/19.
+//  Created by Anton Polyakov on 12/27/19.
 //  Copyright © 2019 by.anton.paliakou. All rights reserved.
 //
 
@@ -22,7 +22,7 @@ class NetworkServiceTests: XCTestCase {
     }
     
     func testLoadRemoteImage() {
-        let url = URL(string: "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-128x128_2x.png")!
+        let url = URL(string: "https://github.com/apalyakou/RImage/blob/master/RImage/RImageTests/Media.xcassets/remote_image.imageset/RemoteImageStub.png")!
         let networkService = NetworkService()
         
         networkService.load(url: url, completion: { data in

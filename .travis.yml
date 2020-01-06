@@ -3,4 +3,4 @@ language: swift
 
 xcode_project: RImage.xcodeproj 
 xcode_scheme: RImageTests
-xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone XR
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro

@@ -4,3 +4,10 @@ language: swift
 xcode_project: RImage.xcodeproj 
 xcode_scheme: RImage
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro
+
+branches:
+  only:
+  - master
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J 'RImage'

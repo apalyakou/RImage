@@ -1,4 +1,4 @@
-<div align="center"><img src="Documentation/RImage_logo.png" width="382px" height="100%"></div>
+<div align="center"><img src="Documentation/RImage_logo.png" width="200px" height="100%"></div>
 
 [![Build Status](https://travis-ci.com/apalyakou/RImage.svg?branch=master)](https://travis-ci.com/apalyakou/RImage.svg?branch=master) 
 [![codecov](https://codecov.io/gh/apalyakou/RImage/branch/master/graph/badge.svg)](https://codecov.io/gh/apalyakou/RImage)

@@ -13,7 +13,7 @@ class NetworkServiceTests: XCTestCase {
 
     func testLoadStubImage() {
         let url = URL(string: "stub/url")!
-        let imageDataStub = UIImage(systemName: "remote_image")?.jpegData(compressionQuality: 1)
+        let imageDataStub = UIImage(named: "remote_image", in: Bundle(for: type(of: self)), compatibleWith: nil)?.jpegData(compressionQuality: 1)
         let networkService = NetworkServiceStub()
         
         networkService.load(url: url, completion: { data in

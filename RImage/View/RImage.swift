@@ -28,4 +28,3 @@ public struct RImage: View {
         self.viewModel = RImageViewModel(url: url, placeholder: placeholder)
     }
 }
-

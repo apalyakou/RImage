@@ -17,7 +17,7 @@ class RImageViewModel: ObservableObject {
     @Published var placeholder: Image?
 
     /// Remote image url
-    private let url: URL
+    let url: URL
 
     /// Image service
     private let imageService: ImageServiceProtocol
